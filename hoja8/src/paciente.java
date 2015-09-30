@@ -12,7 +12,11 @@ public class paciente implements Comparable {
     private String nombre;
     private String sintoma;
     private String codigo;
-    
+    public paciente(String n,String s, String c){
+        nombre=n;
+        sintoma=s;
+        codigo=c;
+    }
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
@@ -36,6 +40,11 @@ public class paciente implements Comparable {
     
     public String getCodigo(){
         return codigo;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     
